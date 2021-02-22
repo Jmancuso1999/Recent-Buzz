@@ -20,7 +20,7 @@ def mostTweeted(sym, api):
     # Calculates the total number of tweets for each symbol 
     # Note: Tweepy API does NOT support an exhuast on the queries, meaning I wont get ALL the tweets within the time frame if it's too large.
 
-    for s in sym[0:4]:
+    for s in sym:
         tweetCount = api.search("${}".format(s))
         count = 0
 
