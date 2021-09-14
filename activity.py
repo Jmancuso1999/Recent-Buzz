@@ -38,7 +38,7 @@ def mostTweeted(sym, api):
     
 # returns a list of the 3 most discussed symbols
 def mostDiscussed(totalS):
-    s = dict(sorted(totalS.items(), key=lambda x: x[1], reverse=True))
+    s = dict(sorted(totalS.items(), key=lambda x: x[1], reverse=True)) # Sorts the dictionary by the values of the dictionary (total # of times each symbol was tweeted)
 
     top3 = []
 
